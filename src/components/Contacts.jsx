@@ -2,8 +2,8 @@ import React from 'react'
 
 function Contacts() {
   return (
-    <div class="container mb-5" style={{"margin-top":"20px"}}>
-        <form>
+    <div class="container mb-7" style={{"margin-top":"20px"}}>
+        <form class="shadow-sm p-3 mb-5 bg-body rounded">
             <h3 class="text-center mb-5 mt-5">Join Our Mailing List!</h3>
 
             <div  class="form-group row mt-2">

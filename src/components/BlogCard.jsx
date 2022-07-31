@@ -1,18 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import image from "../resources/pexels-люда-кавун-12616283.jpg"
 
-function BlogCard() {
+function BlogCard(props) {
   return (
-    <div class=" container" style={{"margin-top": "30px"}}>
+    <div class=" container mt-5 mb-5" >
         <div class="card h-200">
-            <img class="card-img-top" alt=" " src={image}/>
+            <img class="card-img-top" alt=" " src={props.image}/>
             <div class="card-body">
-             <h5 class="card-title mb-0">Blog Title 1</h5>
-             <p class=" card-text"> lorem ipsum dolor lorem ipsum dolor 
-                                    lorem ipsum dolor lorem ipsum dolor 
-                                    lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-                                    lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+             <h5 class="card-title mb-0">{props.title}</h5>
+             <p class=" card-text"> {props.text}
             </p> 
             <a href='#' class="btn btn-primary">Read More</a>
             </div>

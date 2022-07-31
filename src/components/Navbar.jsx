@@ -4,8 +4,8 @@ import React from 'react'
 function Navbar() {
   return (
     <div>
-        <nav class="navbar navbar-dark text-white bg-dark navbar-expand-lg" style={{"margin-bottom":"0"}} >
-            <a href="#" class="navbar-brand">The Talk</a>
+        <nav class="navbar navbar-dark text-white bg-dark navbar-expand-lg mb-0" >
+            <a href="#" className="navbar-brand">The Talk</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
