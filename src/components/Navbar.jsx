@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import "./styling.css"
 
 function Navbar() {
   return (
     <div>
-        <nav class="navbar navbar-dark text-white bg-dark navbar-expand-lg mb-0" >
+        <nav className="nav text-light navbar-expand-lg mb-0 " >
             <a href="#" className="navbar-brand">The Talk</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
