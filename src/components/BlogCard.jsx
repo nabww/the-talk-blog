@@ -3,7 +3,7 @@ import React from 'react'
 
 function BlogCard(props) {
   return (
-    <div class=" container mt-5 mb-5" >
+    <div class=" container mb-5" >
         <div class="card h-200">
             <img class="card-img-top" alt=" " src={props.image}/>
             <div class="card-body">

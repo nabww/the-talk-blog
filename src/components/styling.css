@@ -1,5 +1,35 @@
-.nav{
+/* .nav{
     color: white;
     background-color:black;
     width: auto;
+} */
+.hero{
+    background-color: #fffff0;
+    color: black;
+}
+.logo{
+    height: 40px;
+}
+.navbard{
+    /* display: flex; */
+    /* height: 100px; */
+    /* background-color: black; */
+    align-items: center;;
+}
+.li{
+    color: white;
+    margin-left: 10px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.li:hover{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: right;
+}
+
+.a:hover{
+    font-size: 18px;
+    color: white;
+    background: black;
 }

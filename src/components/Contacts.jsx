@@ -40,6 +40,9 @@ function Contacts() {
       console.log(response.data)
       // console.log("user added to list")
       toast.success("Congrats, You have succesfully joined our Mailing List!")
+      setText("")
+      setPhone("")
+      setEmail("")
 
     }).catch((error)=>{
       console.log(error)
@@ -62,8 +65,9 @@ function Contacts() {
             <input 
             class="form-control" 
             value={email}
-            type="text"
+            type="email"
             onChange= {(e) => setEmail(e.target.value)}
+            required
             ></input>
             </div>
             </div>
@@ -73,9 +77,10 @@ function Contacts() {
             <div class="col-md-9">
             <input 
             class="form-control" 
-            type="text"
+            type="phone"
             value={phone}
             onChange={(e)=>setPhone(e.target.value)}
+            required
             ></input>
             </div>
             </div>
@@ -88,6 +93,7 @@ function Contacts() {
              rows="3"
              value={text}
              onChange={(e)=>setText(e.target.value)}
+             required
              ></textarea>
             </div>
             </div>
@@ -96,7 +102,7 @@ function Contacts() {
                         <button type="submit" class="btn btn-primary" onClick={addToMail}>Register</button>
                     </div>
                 </div>
-        <ToastContainer />
+        <ToastContainer align="center"/>
 
         </form>
         
