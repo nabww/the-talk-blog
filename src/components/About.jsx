@@ -7,7 +7,8 @@ function About() {
         <div class="card" style={{"width":"100%"}}>
             {/* <img src={profile} alt="100x100" class="rounded-circle ml-1 mr-1 mt-1 mb-1" style={{"height":"30%"}}/> */}
             <div class="card-body" align="center">
-                <h3 class="card-title mb-3">About Us</h3>
+                <h2 class="card-title mb-3">About Us</h2>
+                <hr/>
                 <p class=" card-text"> lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
                 lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
                 lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor

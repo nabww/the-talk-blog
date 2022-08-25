@@ -27,9 +27,9 @@ function Contacts() {
 //       });
 //   };
 
-
-
- const addToMail = (e) =>{
+const addToMail=(e)=>{
+if  (email.length && phone.length && text.length !== 0) {
+     
         e.preventDefault();
         privateAxios.post(`/register`, {
             email: email,
@@ -43,6 +43,8 @@ function Contacts() {
       setText("")
       setPhone("")
       setEmail("")
+    
+    
 
     }).catch((error)=>{
       console.log(error)
@@ -50,11 +52,15 @@ function Contacts() {
       toast.warning(error.message)
       // toast.configure()
     });
-    };
-
+    }
+   else
+    {
+      toast.warning("Please fill out all fields")
+    }
+  }
 
   return (
-    <div class="container mb-7" style={{"margin-top":"20px"}}>
+    <div class="container mb-7 mt-5">
         <form class="shadow-sm p-3 mb-5 bg-body rounded" id="user-form">
             <h3 class="text-center mb-5 mt-5">Join Our Mailing List!</h3>
 
@@ -66,18 +72,20 @@ function Contacts() {
             value={email}
             type="text"
             onChange= {(e) => setEmail(e.target.value)}
+            required
             ></input>
             </div>
             </div>
             
             <div class="form-group row mt-2">
-            <label class="col-sm-3 col-form-label" for="contact">Phone</label>
+            <label class="col-sm-3 col-form-label" htmlFor="contact">Phone</label>
             <div class="col-md-9">
             <input 
             class="form-control" 
             type="text"
             value={phone}
             onChange={(e)=>setPhone(e.target.value)}
+            required
             ></input>
             </div>
             </div>
@@ -90,12 +98,13 @@ function Contacts() {
              rows="3"
              value={text}
              onChange={(e)=>setText(e.target.value)}
+             required
              ></textarea>
             </div>
             </div>
             <div class="row">
                     <div class="col-sm-9 offset-sm-3">
-                        <button type="submit" class="btn btn-primary" onClick={addToMail}>Register</button>
+                        <button type="submit" class="btn btn-primary" onClick={addToMail }>Register</button>
                     </div>
                 </div>
         <ToastContainer />

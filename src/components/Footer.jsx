@@ -11,54 +11,54 @@ function Footer() {
 
       <div class="col-md-6 mt-md-0 mt-3">
 
-        <h5 class="text-uppercase">The Talk</h5>
+        <h5 >The Talk</h5>
         <p>This website is built as a journal and record of the experiences of the authors.</p>
 
       </div>
 
       <hr class="clearfix w-100 d-md-none pb-3"/>
 
-      <div class="col-md-6 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
 
-        <h5 class="text-uppercase">Links</h5>
+        <h5 >Social Media</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Instagram</a>
+            <a href="https://instagram.com/">Instagram</a>
           </li>
           <li>
-            <a href="#!">Facebook</a>
+            <a href="https://facebook.com/">Facebook</a>
           </li>
           <li>
-            <a href="#!">Twitter</a>
+            <a href="https://twitter.com/">Twitter</a>
           </li>
           <li>
-            <a href="#!">Medium</a>
+            <a href="https://medium.com/">Medium</a>
           </li>
         </ul>
 
       </div>
 
-      {/* <div class="col-md-3 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
 
-        <h5 class="text-uppercase">Links</h5>
+        <h5 >Other Actions</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Join our team of authors</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">Partner with us</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#!">Link 3</a>
           </li>
           <li>
             <a href="#!">Link 4</a>
-          </li>
+          </li> */}
         </ul>
 
-      </div> */}
+      </div>
 
     </div>
 

@@ -1,7 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { useNavigate } from "react-router-dom";	
 
 function BlogCard(props) {
+
+    const navigate = useNavigate();
+   const handleClick = () => {
+    navigate(props.link) 
+   
+   }
   return (
     <div class=" container mt-5 mb-5" >
         <div class="card h-200">
@@ -10,7 +17,7 @@ function BlogCard(props) {
              <h5 class="card-title mb-0">{props.title}</h5>
              <p class=" card-text"> {props.text}
             </p> 
-            <a href='#' class="btn btn-primary">Read More</a>
+            <button  class="btn btn-primary" onClick={handleClick}>Read More</button>
             </div>
         </div>
         
