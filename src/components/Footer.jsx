@@ -64,7 +64,7 @@ function Footer() {
 
   </div>
 
-  <div class="footer-copyright text-center py-3">©The Talk 2022 Copyright. All rights reserved.  <hr/>  <a href="/" class="text-uppercase text-darken">TEZI</a>
+  <div class="footer-copyright text-center py-3">©The Talk 2022 Copyright. All rights reserved.  <hr/>  <a href="https:tezi.co.ke" class="text-uppercase text-darken">TEZI</a>
   </div>
 
 </footer>

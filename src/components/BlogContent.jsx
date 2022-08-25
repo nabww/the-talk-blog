@@ -24,7 +24,7 @@ function BlogContent(props) {
   return (
     <div >
       <Navbar/>
-      {blogContent}
+      {/* {blogContent} */}
       <Footer/>
     </div>
   )
